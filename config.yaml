@@ -1,0 +1,9 @@
+imap_add: "imap.email-provider.com"
+imap_port: 993
+imap_email: "you@email-provider.com"
+imap_pwd: "password"
+imap_folder: "important"
+#this is the outbound messaging token from tropo.
+tropo_token: "xxx"
+#Include 1 for US, or country code for international. Don't include the +.
+phone: "18006288737"
