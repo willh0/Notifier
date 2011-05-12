@@ -9,7 +9,6 @@ con = imaplib.IMAP4_SSL(config['imap_add'], config['imap_port'])
 con.login(config['imap_email'], config['imap_pwd'])
 con.select(config['imap_folder'])
 typ, data = con.search(None, 'UNSEEN')
-print '%s: Looking for some emails, bro.\n' % (datetime.today())
 for num in data[0].split():
     typ, data = con.fetch(num, '(RFC822)')
     for n in data[0][1].split('\r\n'):
